@@ -12,7 +12,7 @@ const cors = require('cors')
 // const person = require('./models/person')
 
 app.use(express.json())
-// app.use(express.static('build'))
+app.use(express.static('dist'))
 app.use(logger)
 app.use(cors())
 
