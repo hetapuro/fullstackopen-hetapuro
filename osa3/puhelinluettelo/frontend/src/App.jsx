@@ -142,7 +142,7 @@ const App = () => {
       if (window.confirm(`Delete ${name}?`)) {
       personService
         .deletePerson(id)
-        .then(response => {
+        .then(() => {
           setPersons(persons.filter(person => person.id !== id))
           setMessage(`Deleted ${name}`)
           setType("negative")
