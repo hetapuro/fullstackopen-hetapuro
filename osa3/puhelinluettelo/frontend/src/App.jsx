@@ -97,7 +97,15 @@ const App = () => {
             setTimeout(() => {
               setMessage(null)
             }, 5000)
-        })
+          })
+          .catch(error => {
+            setMessage(error.response.data.error)
+            setType("negative")
+    
+            setTimeout(() => {
+                setMessage(null)
+            }, 5000)
+          })
       }
     }
     else {
@@ -119,6 +127,14 @@ const App = () => {
             setMessage(null)
           }, 5000)
         })
+        .catch(error => {
+          setMessage(error.response.data.error)
+          setType("negative")
+  
+          setTimeout(() => {
+              setMessage(null)
+          }, 5000)
+        })
     }
   }
 
@@ -133,6 +149,14 @@ const App = () => {
 
           setTimeout(() => {
             setMessage(null)
+          }, 5000)
+        })
+        .catch(error => {
+          setMessage(error.response.data.error)
+          setType("negative")
+  
+          setTimeout(() => {
+              setMessage(null)
           }, 5000)
         })
       }
