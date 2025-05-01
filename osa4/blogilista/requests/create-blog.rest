@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Lukujonossa",
+    "author": "Sanna Ruoho",
+    "url": "https://lukujonossa.fi/",
+    "likes": "1"
+}
