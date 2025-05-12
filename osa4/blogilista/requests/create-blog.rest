@@ -1,5 +1,6 @@
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhwdXJvIiwiaWQiOiI2ODIxYTljNzBlZTI3MWE4YmU4ZTJmZWMiLCJpYXQiOjE3NDcwMzcwNDksImV4cCI6MTc0NzA0MDY0OX0.wglGHfEcwGP-6hEt5-p8M5lgX1qBEYzjqLRzmi0UUwU
 
 {
     "title": "Lukujonossa",
